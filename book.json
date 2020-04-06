@@ -1,0 +1,43 @@
+{
+    "plugins": [
+        "-search",
+        "-lunr",
+        "fontsettings",
+        "sharing",
+        "-highlight",
+        "prism",
+        "prism-themes",
+        "livereload",
+        "search-pro",
+        "chapter-fold",
+        "splitter",
+        "back-to-top-button",
+        "accordion",
+        "lightbox",
+        "page-footer-ex",
+        "advanced-emoji",
+        "katex"
+    ],
+    "pluginsConfig": {
+        "page-footer-ex": {
+            "copyright": "By [Makiras](https://makiras.org) , as [BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)",
+            "markdown": true,
+            "update_label": "Last Modified on",
+            "update_format": "YYYY-MM-DD HH:mm:ss"
+        },
+        "prism": {
+            "css": [
+                "prismjs/themes/prism-tomorrow.css"
+            ],
+            "ignore": [
+                "mermaid",
+                "eval-js"
+            ]
+        }
+    },
+    "theme-default": {
+        "showLevel": true
+    },
+    "title": "Docs-of-INM-tools",
+    "author": "Makiras"
+}
