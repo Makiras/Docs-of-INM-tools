@@ -1,4 +1,4 @@
-name: 自动部署 Hexo
+name: Auto deploy Gitbook
 
 on:
   push:
@@ -37,6 +37,7 @@ jobs:
           git init
           git config user.name "${{secrets.GIT_NAME}}"
           git config user.email "${{secrets.GIT_EMAIL}}"
-          git add .
+          git add -A
           git commit -m "Update"
-          git push --force --quiet "https://${{secrets.CD_TOKEN}}@${{secrets.CD_REF}}" master:master
+          git push --force "https://${{secrets.CD_TOKEN}}@${{secrets.CD_REF}}" master:master
+        # CD_Token: "coding_user:coding_token" , CD_REF: "repo addr"
